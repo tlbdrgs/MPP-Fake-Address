@@ -1,0 +1,349 @@
+.App-header {
+  background-color: #1f0131;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.address-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.address-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.add-address-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttonBlue {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonBlue:hover {
+  background-color: #0056b3;
+}
+
+.update-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: auto;
+}
+
+.update-button:hover {
+  background-color: darkgreen;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.buttonOrange {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ee8700;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonOrange:hover {
+  background-color: #e4c200;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.new-address-form {
+  margin-top: 20px;
+}
+
+.new-address-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-address-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-address-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-address-form button:hover {
+  background-color: #0056b3;
+}
+
+.view-persons-button {
+  background-color: #4700ee;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease
+}
+
+.view-persons-button:hover {
+  background-color: #0400e2;
+}
+
+.person-table-container {
+  margin-top: 20px;
+}
+
+.person-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.person-table th, .person-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.person-table th {
+  background-color: #f2f2f2;
+}
+
+.add-person-form {
+  margin-top: 20px;
+}
+
+.add-person-form input, .add-person-form button {
+  margin-right: 10px;
+}
+
+.login-container,
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2,
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container label,
+.register-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-container input,
+.register-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button,
+.register-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover,
+.register-container button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.person-table-container button {
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.person-table-container button:hover {
+  opacity: 0.8;
+}
+
+.person-table-container button.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.person-table-container button.delete-button:hover {
+  background-color: darkred;
+}
+
+.person-table-container button.update-button {
+  background-color: green;
+  color: white;
+}
+
+.person-table-container button.update-button:hover {
+  background-color: darkgreen;
+}
+
+.user-info button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-info button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.buttonRed {
+  background-color: #dc3545; /* Red color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonRed:hover {
+  background-color: #c82333; /* Darker shade of red on hover */
+}
+
+button {
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 10px; /* Add margin at the top */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Styling for login and register links */
+a {
+  text-decoration: none;
+  color: #007bff; /* Blue color */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3; /* Darker shade of blue on hover */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Styling for input labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
